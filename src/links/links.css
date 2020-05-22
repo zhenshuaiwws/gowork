@@ -1,0 +1,44 @@
+a {
+  text-decoration: none;
+  color: black;
+  transition: all 200ms;
+}
+a:hover {
+  color: lightseagreen;
+}
+
+.container {
+  width: 400px;
+}
+
+.group {
+  margin-left: 20px;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 5px;
+}
+.group--product {
+  background: lightblue;
+}
+.group--library {
+  background: lightgoldenrodyellow;
+}
+.group--link {
+  background: lightgreen;
+}
+.group-name {
+  border-bottom: solid 1px gainsboro;
+  font-weight: bold;
+}
+.group-item {
+  display: flex;
+  margin-top: 15px;
+  min-width: 200px;
+}
+.group-item .item-name {
+  margin-right: auto;
+}
+.group-item .item-url {
+  margin-left: 15px;
+  display: inline-block;
+}
