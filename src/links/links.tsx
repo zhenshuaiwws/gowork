@@ -1,14 +1,16 @@
 import React, { Component } from "react";
 import "./links.css";
+// import "./links.scss";
 
 export class Links extends Component {
   githubs = [
     {
-      groupName: "产品 GitHub",
+      groupName: "PRODUCT",
       groupClass: "group--product",
       children: [
         {
           name: "wt-rd-agile-sky",
+          url: "https://github.com/atinc/wt-rd-agile-sky",
           urls: [
             {
               name: "Repository",
@@ -23,11 +25,12 @@ export class Links extends Component {
       ],
     },
     {
-      groupName: "库 GitHub",
+      groupName: "LIBRARY",
       groupClass: "group--library",
       children: [
         {
           name: "ngx-tethys",
+          url: "https://github.com/atinc/ngx-tethys",
           urls: [
             {
               name: "Repository",
@@ -45,6 +48,7 @@ export class Links extends Component {
         },
         {
           name: "ngx-styx",
+          url: "https://github.com/atinc/ngx-styx",
           urls: [
             {
               name: "Repository",
@@ -62,6 +66,7 @@ export class Links extends Component {
         },
         {
           name: "ngx-planet",
+          url: "https://github.com/worktile/ngx-planet",
           urls: [
             {
               name: "Repository",
@@ -74,7 +79,8 @@ export class Links extends Component {
           ],
         },
         {
-          name: "tethys/icons",
+          name: "icons",
+          url: "https://github.com/atinc/wt-design-icons",
           urls: [
             {
               name: "Repository",
@@ -100,11 +106,11 @@ export class Links extends Component {
       url: "http://52.82.70.15/view/Frontend-CD/job/wt-rd-agile-sky-CD-job/",
     },
     {
-      name: "alpha",
+      name: "Alpha",
       url: "http://at.worktile.live/",
     },
     {
-      name: "beta",
+      name: "Beta",
       url: "http://web-beta.worktile.com/",
     },
   ];
@@ -113,7 +119,7 @@ export class Links extends Component {
     return (
       <div className="container">
         {this.githubs.map((group) => (
-          <div className={group.groupClass + " group"}>
+          <div className="group">
             <div className="group-name">{group.groupName}</div>
             {group.children.map((item) => (
               <div className="group-item">
@@ -132,10 +138,15 @@ export class Links extends Component {
             ))}
           </div>
         ))}
-        <div className="group group--link">
+        <div className="group">
           {this.links.map((n) => (
             <div>
-              <a href={n.url} target="_blank" rel="noopener noreferrer">
+              <a
+                className="group-item"
+                href={n.url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {n.name}
               </a>
             </div>

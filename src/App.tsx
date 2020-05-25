@@ -5,7 +5,7 @@ import { Links } from "./links/links";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
@@ -24,8 +24,6 @@ function App() {
       <iframe
         title="fanyi"
         src="https://fanyi.baidu.com/#en/zh/"
-        width="100%"
-        height="300"
       ></iframe>
     </div>
   );

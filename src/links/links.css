@@ -1,34 +1,46 @@
+body {
+  background: #6bcaed;
+  -webkit-font-smoothing: antialiased;
+}
 a {
   text-decoration: none;
-  color: black;
+  color: #ffffff;
   transition: all 200ms;
 }
 a:hover {
-  color: lightseagreen;
+  color: #6bcaed;
 }
-
+.app {
+  display: flex;
+}
 .container {
   width: 400px;
+}
+iframe {
+  margin: 20px;
+  flex: 1;
+  height: 500px;
+  border: none;
+  border-radius: 5px;
 }
 
 .group {
   margin-left: 20px;
   margin-top: 20px;
-  padding: 20px;
+  padding:  20px;
   border-radius: 5px;
-}
-.group--product {
-  background: lightblue;
-}
-.group--library {
-  background: lightgoldenrodyellow;
-}
-.group--link {
-  background: lightgreen;
+  color: #fff;
+  background: #364569;
+  border: dashed 1px #35495e;
+  box-shadow: 6px 8px 20px 3px rgba(0, 0, 0, 0.3);
 }
 .group-name {
-  border-bottom: solid 1px gainsboro;
+  margin-top: -15px;
+  margin-bottom: 20px;
+  border-bottom: solid 1px #6bcaed;
   font-weight: bold;
+  color: #6bcaed;
+  line-height: 3;
 }
 .group-item {
   display: flex;
