@@ -22,6 +22,20 @@ export class Links extends Component {
             },
           ],
         },
+        {
+          name: "wt-sky-portal",
+          url: "https://github.com/atinc/wt-sky-portal",
+          urls: [
+            {
+              name: "Repository",
+              url: "https://github.com/atinc/wt-sky-portal",
+            },
+            {
+              name: "PR",
+              url: "https://github.com/atinc/wt-sky-portal/pulls",
+            },
+          ],
+        },
       ],
     },
     {
@@ -65,20 +79,6 @@ export class Links extends Component {
           ],
         },
         {
-          name: "ngx-planet",
-          url: "https://github.com/worktile/ngx-planet",
-          urls: [
-            {
-              name: "Repository",
-              url: "https://github.com/worktile/ngx-planet",
-            },
-            {
-              name: "PR",
-              url: "https://github.com/worktile/ngx-planet/pulls",
-            },
-          ],
-        },
-        {
           name: "icons",
           url: "https://github.com/atinc/wt-design-icons",
           urls: [
@@ -93,6 +93,20 @@ export class Links extends Component {
             {
               name: "Doc",
               url: "http://lib.worktile.live/icons/",
+            },
+          ],
+        },
+        {
+          name: "ngx-planet",
+          url: "https://github.com/worktile/ngx-planet",
+          urls: [
+            {
+              name: "Repository",
+              url: "https://github.com/worktile/ngx-planet",
+            },
+            {
+              name: "PR",
+              url: "https://github.com/worktile/ngx-planet/pulls",
             },
           ],
         },
@@ -139,6 +153,7 @@ export class Links extends Component {
           </div>
         ))}
         <div className="group">
+          <div className="group-name">LINKS</div>
           {this.links.map((n) => (
             <div>
               <a
