@@ -21,10 +21,7 @@ function App() {
         </a>
       </header> */}
       <Links></Links>
-      <iframe
-        title="fanyi"
-        src="https://fanyi.baidu.com/#en/zh/"
-      ></iframe>
+      <iframe title="fanyi" src="https://fanyi.baidu.com/#en/zh/"></iframe>
     </div>
   );
 }

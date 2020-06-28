@@ -74,7 +74,7 @@ export class Links extends Component {
             },
             {
               name: "Doc",
-              url: "http://lib.worktile.live/ngx-styx",
+              url: "http://lib.worktile.live/ngx-styx/",
             },
           ],
         },
@@ -116,16 +116,21 @@ export class Links extends Component {
 
   links = [
     {
-      name: "Jenkins",
-      url: "http://52.82.70.15/view/Frontend-CD/job/wt-rd-agile-sky-CD-job/",
-    },
-    {
       name: "Alpha",
       url: "http://at.worktile.live/",
     },
     {
+      name: "Jenkins",
+      url:
+        "http://jenkins.worktile.live/view/Frontend-CD/job/wt-rd-agile-sky-CD-job/",
+    },
+    {
       name: "Beta",
       url: "http://web-beta.worktile.com/",
+    },
+    {
+      name: "Ant Design",
+      url: "https://ng.ant.design/components/button/zh",
     },
   ];
 
@@ -136,7 +141,7 @@ export class Links extends Component {
           <div className="group">
             <div className="group-name">{group.groupName}</div>
             {group.children.map((item) => (
-              <div className="group-item">
+              <div className="repository-item">
                 <span className="item-name">{item.name}</span>
                 {item.urls?.map((n) => (
                   <a
@@ -154,18 +159,13 @@ export class Links extends Component {
         ))}
         <div className="group">
           <div className="group-name">LINKS</div>
-          {this.links.map((n) => (
-            <div>
-              <a
-                className="group-item"
-                href={n.url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+          <div className="link-item-container">
+            {this.links.map((n) => (
+              <a href={n.url} target="_blank" rel="noopener noreferrer">
                 {n.name}
               </a>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     );
